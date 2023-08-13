@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Bellefair");
+      body {
+        font-family: "Bellefair", serif;
+        color: #222;
+      }
+      a {
+        text-decoration: none;
+        color: red;
+      }
+      h1 {
+        size: 2em;
+      }
+      p::first-letter {
+        font-size: 2em;
+        color: red;
+      }
+      #sidemenu p::first-letter {
+        color: red;
+      }
+      .logo {
+        font-size: 2em;
+      }
+      .container {
+        width: 1080px;
+        margin: auto;
+        background-color: aqua;
+        padding: 10px;
+      }
+      nav {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+      }
+      nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        width: 150px;
+      }
+      nav a {
+        display: block;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+      }
+      nav a:hover {
+        background-color: red;
+        color: black;
+      }
+      .header-container header {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px;
+      }
+      #content {
+        background-color: white;
+        color: black;
+        width: 56%;
+        float: left;
+        min-height: 500px;
+        padding: 5px 2%;
+      }
+      #sidemenu {
+        width: 36%;
+        float: right;
+        background-color: red;
+        padding: 0 2%;
+      }
+      #sidemenu ul {
+        margin: 0;
+        padding: 0;
+      }
+      #sidemenu li {
+        list-style-type: none;
+        display: block;
+        width: 100%;
+        padding: 6px;
+        background-color: black;
+      }
+      #sidemenu a {
+        color: white;
+        text-decoration: none;
+      }
+      #sidemenu li:hover {
+        background-color: coral;
+        color: black;
+      }
+      .main-container {
+        background-color: red;
+      }
+      .footer-container {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      .rcorner {
+        border-radius: 25px;
+        background-color: black;
+        padding: 15px;
+      }
+      .clearfix {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <header>
+          <div class="logo">Company Name</div>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-container">
+        <div id="content">
+          <header>Main Page Content</header>
+          <p>Welcome to the <a href="#">wonderland !</a></p>
+          <h1>Introduction to Bootstrap</h1>
+          <p>According to the official website, Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. Sounds great! Now how do I use it? It would be easy to send you over to their Getting Started page and call it a day. Their setup guide is indeed a host of useful information — links to CDNs, explanations on how to install with Bower, npm, and Composer, information on integration with Autoprefixer and LESS, a bunch of templates, licenses, and translations — but you could read this blog here instead for a better and easier understanding.</p>
+		<span class="glyphicon glyphicon-pencil"></span>
+
+		<p class="text-center">The list below shows the different version of Bootstrap so far. <span class="glyphicon glyphicon-list-alt"></span></p>
+
+		<ul class="list-group">
+		  <li class="list-group-item">v1.x</li>
+		  <li class="list-group-item">v2.x</li>
+		  <li class="list-group-item">v3.x</li>
+		  <li class="list-group-item">v4.x</li>
+		</ul>
+
+		<p class="text-center bg-info"> The main features of bootstrap is, it is very simple and easy to use, huge JavaScript plugins are available, easily design mobile friendly website.</p>
+
+	</div>
+
+	
+	<div class="container-fluid">   
+	  <h2></h2>
+	  <table class="table table-bordered table-striped">
+	    <thead>
+	      <tr >
+	        <th>Features of Bootstrap</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td>Easy to Use</td>
+	      </tr>
+	      <tr>
+	        <td>Mobile Friendly</td>
+	      </tr>
+	      <tr>
+	        <td>Prestyled Components</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+	<div class="container-fluid"
+		<p class="text-left">Lets take a look at the components of bootstrap:</p>
+		<h1>CSS<span class="badge badge-secondary">Quoted</span></h1>
+		<p class="text-justify">Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>
+		<h2>JS <span class="badge badge-secondary">Quoted</span></h2>
+		<p class="text-justify">Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following scripts near the end of your pages, right before the closing bodytag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.We use jQuery’s slim build, but the full version is also supported.</p>
+	</div>
+	<div class="card">
+		  <div class="card-header">Author</div>
+		  <div class="card-body">The article was contributed by katesmith12</div>
+		  <a href="https://www.sitesbay.com/bootstrap/bootstrap-features-of-bootstrap" class="card-footer btn btn-outline-primary stretched-link">View References</a>
+	</div>
+
+          <footer>Share on social media</footer>
+        </div>
+        <aside id="sidemenu">
+          <h3>News Feed</h3>
+          <div class="rcorner">
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="clearfix"></div>
+      </div>
+      <div class="footer-container">
+        <footer>
+          <div>&copy; copyright 2023 discovery</div>
+          <div>More info coming hold on !</div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
