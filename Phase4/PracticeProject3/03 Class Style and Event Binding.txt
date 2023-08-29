@@ -1,0 +1,77 @@
+****************************************************************
+CLASS BINDING
+****************************************************************
+
+- APP IS ALREADY CONTAINING BINDING COMPONENT
+- Let's prepare one class names as inStock in 
+
+binding.component.css
+-----------------------
+
+.inStock{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+-----------------------
+
+
+goto >binding.component.html and bind the class using below tag
+
+  <td [class.inStock]="true">{{p.name}}</td>
+
+similarly you can prepare many classes and bind them as mentioned above
+
+***************************************************************
+STYLE BINDING
+***************************************************************
+
+PREPARE ONE NUMBER WITH NAME SAY 'we' in bindings.component.ts file
+
+we:number=700;
+
+now bind the data in binding.component.html file
+
+ <td [style.font-weight]="we">{{p.price}}</td>
+
+
+save it and check the output
+
+
+****************************************************************
+EVENT BINDING
+****************************************************************
+
+preprae one button and div in binding.component.html
+
+binding.component.html
+-------------------------------
+<div class="container">
+    <button class="btn btn-primary" (click)="show()">Show Div</button>
+
+    <div *ngIf="flag" style="background-color: yellowgreen;">
+        This is My Div and You Have Successfully Implememneted EVENT BINDING
+    </div>
+</div>
+
+
+-----------------------------
+
+now >goto> binding.component.ts file and declare flag as below and show method as below
+
+
+flag=false;
+  show(){
+    this.flag=!this.flag;
+  }
+
+
+save it and check the output
+
+
+
+
+
